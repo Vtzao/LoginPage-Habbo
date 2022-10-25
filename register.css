@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Press+Start+2P&family=VT323&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+body *{
+    box-sizing: border-box;
+}
+.main-register{
+    width: 100vw;
+    height: 105vh;
+    background: linear-gradient(rgb(19, 88, 153), rgb(6, 43, 78));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frank-register{
+    width: 30vw;
+    margin-bottom: 10px;
+}
+.logo-register{
+    width: 20vw;
+    padding-bottom: 10px;
+}
+
+.left-register{
+    width: 40vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a { 
+    color: currentColor;
+ } 
+
+.login-btn{
+    font-size: 18pt;
+    color: antiquewhite;
+    background-color: rgb(55, 145, 37);
+    border: 2px solid rgb(81, 175, 62);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(19, 128, 15, 0.178);
+    cursor: pointer;
+}
+.login-btn:hover{
+    background-color: rgb(33, 87, 22);
+    border: 2px solid rgb(55, 145, 37);
+}
+
+.card-register > h1{
+    display: flex;
+    font-size: 25pt;
+    font-family: 'VT323', monospace;
+    color: rgb(226, 226, 226);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 45%;
+    padding-left: 45%;
+    border-radius: 10px;
+    background-color: rgb(7, 56, 102);
+    border: 3px solid rgb(14, 78, 138);
+}
+
+.right-register {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-register{
+    width: 50vw;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo-register{
+    width: 20%;
+    height: 10%;
+    margin-bottom: 30px;
+}
+.card-register{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: rgb(19, 88, 153);
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px rgba(8, 8, 8, 0.178);
+}
+
+.textfield {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    background: linear-gradient(rgb(226, 226, 226), rgb(211, 211, 211));
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: rgb(226, 226, 226);
+    margin-bottom: 5px;
+}
+
+.textfield > input::placeholder{
+    color: rgb(167, 167, 167);
+}
+
+.btn-register{
+    width: 55%;
+    padding: 16px 0;
+    margin: 15px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: rgba(238, 238, 238, 0.801);
+    background-color: rgb(55, 145, 37);
+    border: 2px solid rgb(81, 175, 62);
+    cursor: pointer;
+}
+
+.btn-register:hover{
+    background-color: rgb(33, 87, 22);
+    border: 2px solid rgb(55, 145, 37);
+}
+
+footer{
+    background: rgb(3, 24, 44);
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: #e0ab18;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 950px){
+    .card-register{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-register{
+        flex-direction: column-reverse;
+        height: 105vh;
+    }
+    .frank-register{
+        margin-top: 10px;
+    }
+    .login-btn{
+        width: 70%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .left-register{
+        width: 100%;
+        height: auto;
+    }
+    .right-register{
+        width: 100%;
+        height: auto;
+    }
+    .frank-register{
+        width: 50vw;
+    }
+    .card-register{
+        width: 70%;
+    }
+}
